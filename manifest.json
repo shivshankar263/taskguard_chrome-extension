@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Task Guard",
+  "version": "1.0",
+  "description": "Prevents Chrome from closing until your primary task is marked complete.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "assets/icon.svg",
+    "32": "assets/icon.svg",
+    "48": "assets/icon.svg",
+    "128": "assets/icon.svg"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Task Guard",
+    "default_icon": "assets/icon.svg"
+  }
+}
